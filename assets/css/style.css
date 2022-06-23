@@ -1,0 +1,254 @@
+/* CSS Document */
+
+
+* {margin: 0; padding: 0;}
+
+html { 
+    height: 100%; font-size: 62.5%
+}
+
+
+body {
+/* activated flex box */
+flex-wrap: wrap;
+height: 100%;
+background-color: #10578D /*DarkBlue*/;
+text-align: center;
+font: 1.2em Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+/*
+a:hover MUST come after a:link and a:visited
+link visited hover active
+a:active MUST come after a:hover
+a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.
+a:active MUST come after a:hover in the CSS definition in order to be effective.
+*/
+
+
+/* combine several CSS properties to display links as boxes/buttons */
+
+
+/* a:link and a:visited are set-up. color = blue */
+a:link, a:visited {
+color: #004F8B;
+text-decoration: underline;
+font-weight: bolder;
+}
+
+
+a:hover {
+text-decoration: none;
+}
+
+
+#HDR1 {
+flex-wrap: wrap;
+width: 850px;
+margin: 60px auto 0 auto;
+padding-bottom: 1px;      /* padding-bottom: 90px; */
+text-align: left;
+}
+
+
+.title {
+background-color: black;  /* My Personal website's background color */
+letter-spacing: 1px;
+width: 39em;
+}
+
+
+.title p {
+color: #FFFFFF;
+margin: 4px 0 0 21px;
+padding-bottom: 12px;
+}
+
+
+h1 {
+font: normal 2.4em Georgia, "Times New Roman", Times, serif;
+color: #FFFFFF;
+padding-top: 25px;
+margin-left: 20px;
+}  /* color is white */
+
+
+/*
+a:hover MUST come after a:link and a:visited
+link visited hover active
+a:active MUST come after a:hover
+*/
+
+
+/* h1 uses the already defined a:link and a:visited */
+h1 a:link, h1 a:visited {
+color: #FFFFFF;
+text-decoration: none;
+font-weight: normal;
+}
+
+
+/* header 1 span color set to orange */
+/* to set PERSONAL fonts color to orange */
+h1 span {
+color: orange;
+}
+
+
+h2 {
+font: normal 1.5em Georgia, "Times New Roman", Times, serif;
+color: #004F8B;
+letter-spacing: 1px;
+padding-left: 25px;
+margin-bottom: 7px;
+}
+
+
+/* Menu */
+
+ul.menu {
+list-style-type: none;
+}
+
+
+ul.menu li {
+padding: 18px 0;
+}
+
+
+ul.menu li a, ul.menu li a:visited {
+color: #FFFFFF;
+font-weight: normal;
+text-decoration: none;
+padding: 4px 7px;
+}
+
+
+/* background-color and a:hover, a:active */
+ul.menu li a:hover, ul.menu li a.active {
+background-color: #002F53;
+}
+
+
+/* Content box */
+
+
+.HDR2 {
+width: 940px;  
+margin: 19px auto 0px auto;
+}
+
+
+.LEFT {
+float: left;
+width: 168px;
+text-align: center;
+color: white;
+}
+
+
+.LEFT h3 {
+font: normal 1.5em Georgia, "Times New Roman", Times, serif;
+margin: 10px 0 7px 0;
+letter-spacing: 1px;
+}
+
+
+.RIGHT {
+display: flex;
+flex-wrap: wrap;
+margin: 0 0 0 170px;
+width: 770px;
+}
+
+
+.bxin {
+display: flex;
+flex-wrap: wrap;
+background-color: #FFFFFF;
+padding: 0.8em 0 1em 0;
+margin: 0 0em 0 0em;
+}
+
+
+.bxin p {
+text-align:  left;
+line-height: 1.6;
+margin: 0 0 0px 0px;
+color: #242424;
+}
+
+
+/* Footer */
+
+.footer_left /*, .footer_right */ {
+font-size: 0.8em;
+color: red;      /* color: #626262; */
+position: relative;
+display: inline;
+}
+
+
+.footer_left {
+float: left;
+margin-left: 22px;
+color: red;
+}  /* added color red */
+
+
+.footer_right {
+font-size: 0.8em;
+float: right;
+/* margin-right: 100px; */
+margin-left: 100px;
+color: red;
+}  /* added color red */   
+
+.footer_left a, .footer_left a:visited, .footer_right a, .footer_right a:visited {
+font-weight: normal;
+color: red; 
+}  /* added color red */
+
+
+
+/* mobile phone = portrait */
+@media screen and (max-width:479px){
+    body {background-color: #DDA0DD;
+            display: flex;
+            flex-wrap: wrap;}	/* Plum */
+}
+
+
+/* mobile phone = landscape */
+@media screen and (min-width:480px) and (max-width:767px){
+	body {background-color: #F0E68C;
+            display: flex;
+            flex-wrap: wrap;}  /* khaki */
+}
+
+
+/* tablet = portrait */
+@media screen and (min-width:768px) and (max-width:959px){
+	body {background-color: #FFFF00;
+            display: flex;
+            flex-wrap: wrap;}  /* yellow */
+}
+
+
+/* all mobile phone sizes 
+@media screen and (max-width:767px){
+	body {background-color: #008080;
+            display: flex;
+            flex-wrap: wrap;}  
+}
+*/  /*  color is Teal */
+
+
+/* global styles = 960px or larger */
+@media screen and (min-width:960px){
+	body {background-color: #10578D;
+            }  /*DarkBlue*/
+}
+
+/* END OF FILE */
